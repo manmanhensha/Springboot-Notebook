@@ -52,7 +52,7 @@ public class WebSocketServer {
     public void onClose() {
         try {
             webSockets.remove(this);
-            log.info("【websocket服务端】连接断开，总数为:" + webSockets.size());
+            log.info("【websocket服务端】连接断开,总数为:" + webSockets.size());
         } catch (Exception e) {
         }
     }
